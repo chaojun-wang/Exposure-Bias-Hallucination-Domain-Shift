@@ -1,6 +1,6 @@
 # On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation
 
-This repository is the official implementation of [On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation](). The code is based on [Nematus](https://github.com/EdinburghNLP/nematus)
+This repository is the official implementation of [On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation](). The code is based on [Nematus](https://github.com/EdinburghNLP/nematus). MRT changes have been merged into the master branch of [Nematus](https://github.com/EdinburghNLP/nematus).
 
 ## Usage instruction
 *Only respository-specific usage instruction, for general usages instruction, please refer to [Nematus](https://github.com/EdinburghNLP/nematus)*
