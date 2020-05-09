@@ -5,11 +5,6 @@ This repository is the training scripts of [On Exposure Bias, Hallucination and 
 ## Usage instruction
 *Only respository-specific usage instruction, for general usages instruction, please refer to [Nematus](https://github.com/EdinburghNLP/nematus)*
 
-requires the following packages:
-
- - Python 3 (tested on version 3.5.2)
- - TensorFlow (tested on version 1.12)
-
 #### `nematus/train.py` : use to train a new model
 
 #### training parameters
