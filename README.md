@@ -40,6 +40,7 @@ We further manually evaluate the proportion of hallucinations in the test set, o
 |---        |---          |
 | Baseline | 33% (11.2) |
 | +Minimum Risk Training | 26% (12.0) |
+
 *Proportion of hallucinations and BLEU on out of-domain test sets.*
 
 The results in above table demonstrate that with MRT training, the proportion of hallucination decreases from 33% to 26%, along with the increase in BLEU score.
@@ -71,7 +72,7 @@ Note, the increase in all probabilities with MRT (between MRT 0-500 updates) is 
 Above shows the in-domain result . For in-domain, the pattern is similar with out-of-domain (for higher time steps of baseline, there is little difference between distractor and reference, and MRT increases the gap between them), but because difference is so big for earlier time steps, this is unlikely to affect globally best hypothesis. Therefore, rare hallucinations are produced on in-domain test set.
 
 ### Analysis: Beam Size (German to English)
-Based on previous visualisation, we naturally link the beam size problem (increase beam size, performance drop) to hallucinations. From the baseline uncertainty analysis in the [section](#analysis:-uncertainty-(out-of-domain-german-to-english)), as shown in figure below, we can see that in the first few time steps, the reference tends to be more probable, so if a hallucination "survives" the first few time steps, then there's a risk that it will become the most likely hypothesis over time. Therefore, increasing beam size, more hallucination will be generated, and deteriorating performance.
+Based on previous visualisation, we naturally link the beam size problem (increase beam size, performance drop) to hallucinations. From the baseline uncertainty analysis in the [section](#out-of-domain), as shown in figure below, we can see that in the first few time steps, the reference tends to be more probable, so if a hallucination "survives" the first few time steps, then there's a risk that it will become the most likely hypothesis over time. Therefore, increasing beam size, more hallucination will be generated, and deteriorating performance.
 
 ![](./blog/baseline.png)
 
