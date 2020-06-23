@@ -1,8 +1,6 @@
 #!/usr/bin/env sh
 # Distributed under MIT license
 
-source /mnt/elli0/cwang/miniconda3/bin/activate nmt
-
 script_dir=`dirname $0`
 main_dir=$script_dir/../
 data_dir=$main_dir/prep # date directory
